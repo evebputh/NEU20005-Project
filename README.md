@@ -1,4 +1,4 @@
-Sound Induced Flash Program
+Sound Induced Flash Illusion Experiment Program
 
 Code by Evelina Babu
 
