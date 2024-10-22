@@ -1,0 +1,2013 @@
+{
+  "components": {
+    "7": {
+      "id": "7",
+      "type": "lab.html.Screen",
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "responses": [
+        {
+          "label": "Continue",
+          "event": "keypress",
+          "target": "",
+          "filter": "Space"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "break",
+      "_tab": "Content",
+      "content": "<header>\n  <p><h2>Block 1 completed.</h2></p>\n</header>\n\n\n<main class=\"content-vertical-center content-horizontal-center\">\n <p> <h3>Please take a break.</h3> </p>\n </main>\n \n \n <footer style=\"background-color:grey;\"> \n  <em>Press the space bar when you are ready to coninue on to Block 2.</em>\n</footer>\n\n \n\n ",
+      "files": []
+    },
+    "9": {
+      "id": "9",
+      "type": "lab.html.Form",
+      "content": "<header><h3> <br><br>You have completed the experiment!<br><br><h3></header>\n  <main>\n   <form id=\"form\">\n     <p> Thank you for participating. Feel free to ask any question you may have about the study :) </p>\n\n</main>",
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "responses": [
+        {
+          "label": "Continue",
+          "event": "keypress",
+          "target": "",
+          "filter": "d"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "end of the study",
+      "_tab": "Content",
+      "scrollTop": true,
+      "files": []
+    },
+    "10": {
+      "id": "10",
+      "type": "lab.flow.Sequence",
+      "children": [
+        "12"
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "block 1",
+      "_collapsed": false,
+      "_tab": "Scripts",
+      "files": []
+    },
+    "12": {
+      "id": "12",
+      "type": "lab.canvas.Frame",
+      "context": "<main style=\"cursor: none\">\n<!-- Nested components use this canvas -->\n<canvas />\n</main >\n<footer style=\"background-color: grey;\">\n<p>Please count the flashes: B = 0 flashes, N = 1 flash, M = 2 flashes</p>\n</footer>",
+      "contextSelector": "canvas",
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "Frame",
+      "children": [
+        "13"
+      ],
+      "_collapsed": false,
+      "files": [],
+      "_tab": "Scripts"
+    },
+    "13": {
+      "id": "13",
+      "type": "lab.flow.Loop",
+      "children": [
+        "14"
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "templateParameters": {
+        "columns": [
+          {
+            "name": "SIFIlabel",
+            "type": "string"
+          },
+          {
+            "name": "SOA",
+            "type": "number"
+          },
+          {
+            "name": "v1",
+            "type": "string"
+          },
+          {
+            "name": "v2",
+            "type": "string"
+          },
+          {
+            "name": "a1",
+            "type": "number"
+          },
+          {
+            "name": "a2",
+            "type": "number"
+          },
+          {
+            "name": "fixation",
+            "type": "number"
+          },
+          {
+            "name": "ITI",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          [
+            "A2",
+            "180",
+            "white",
+            "grey",
+            "1",
+            "1",
+            "1300",
+            "1400"
+          ],
+          [
+            "A2",
+            "180",
+            "white",
+            "grey",
+            "1",
+            "1",
+            "1300",
+            "1400"
+          ],
+          [
+            "A1",
+            "53",
+            "white",
+            "grey",
+            "1",
+            "0",
+            "1200",
+            "1200"
+          ],
+          [
+            "A1",
+            "53",
+            "white",
+            "grey",
+            "1",
+            "0",
+            "1200",
+            "1200"
+          ],
+          [
+            "A0",
+            "180",
+            "white",
+            "grey",
+            "0",
+            "0",
+            "1400",
+            "1200"
+          ],
+          [
+            "A2",
+            "180",
+            "white",
+            "grey",
+            "1",
+            "1",
+            "1300",
+            "1400"
+          ],
+          [
+            "A2",
+            "180",
+            "white",
+            "grey",
+            "1",
+            "1",
+            "1000",
+            "1300"
+          ],
+          [
+            "A0",
+            "180",
+            "white",
+            "grey",
+            "0",
+            "0",
+            "1100",
+            "1000"
+          ],
+          [
+            "A0",
+            "180",
+            "white",
+            "grey",
+            "0",
+            "0",
+            "1000",
+            "1000"
+          ],
+          [
+            "A1",
+            "53",
+            "white",
+            "grey",
+            "1",
+            "0",
+            "1200",
+            "1200"
+          ],
+          [
+            "A2",
+            "180",
+            "white",
+            "grey",
+            "1",
+            "1",
+            "1300",
+            "1400"
+          ],
+          [
+            "A2",
+            "180",
+            "white",
+            "grey",
+            "1",
+            "1",
+            "1400",
+            "1200"
+          ],
+          [
+            "A1",
+            "53",
+            "white",
+            "grey",
+            "0",
+            "1",
+            "1400",
+            "1200"
+          ],
+          [
+            "A0",
+            "180",
+            "white",
+            "grey",
+            "0",
+            "0",
+            "1300",
+            "1000"
+          ],
+          [
+            "A0",
+            "180",
+            "white",
+            "grey",
+            "0",
+            "0",
+            "1200",
+            "1300"
+          ]
+        ]
+      },
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "loop conditions",
+      "_tab": "Content",
+      "_collapsed": false,
+      "files": [],
+      "sample": {
+        "mode": "sequential"
+      }
+    },
+    "14": {
+      "id": "14",
+      "type": "lab.flow.Sequence",
+      "children": [
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20"
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "Sequence",
+      "files": []
+    },
+    "15": {
+      "id": "15",
+      "type": "lab.canvas.Screen",
+      "content": [
+        {
+          "type": "i-text",
+          "version": "2.2.4",
+          "originX": "center",
+          "originY": "center",
+          "left": "0",
+          "top": -125,
+          "width": 56.4,
+          "height": 113,
+          "fill": "black",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeLineJoin": "round",
+          "strokeMiterLimit": 10,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "clipTo": null,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "transformMatrix": null,
+          "skewX": 0,
+          "skewY": 0,
+          "text": "+",
+          "fontSize": "100",
+          "fontWeight": "normal",
+          "fontFamily": "serif",
+          "fontStyle": "normal",
+          "lineHeight": 1.16,
+          "underline": false,
+          "overline": false,
+          "linethrough": false,
+          "textAlign": "center",
+          "textBackgroundColor": "",
+          "charSpacing": 0,
+          "id": "320",
+          "styles": {}
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "viewport": [
+        800,
+        600
+      ],
+      "title": "Fixation",
+      "_tab": "Content",
+      "timeout": "${parameters.fixation}",
+      "files": []
+    },
+    "16": {
+      "id": "16",
+      "type": "lab.canvas.Screen",
+      "content": [
+        {
+          "type": "circle",
+          "version": "2.2.4",
+          "originX": "center",
+          "originY": "center",
+          "left": 0,
+          "top": "90.5",
+          "width": 55,
+          "height": 55,
+          "fill": "${ parameters.v1 }",
+          "stroke": "${parameters.v1}",
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeLineJoin": "round",
+          "strokeMiterLimit": 10,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "clipTo": null,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "transformMatrix": null,
+          "skewX": 0,
+          "skewY": 0,
+          "radius": 27.5,
+          "startAngle": 0,
+          "endAngle": 6.283185307179586,
+          "id": "182"
+        },
+        {
+          "type": "i-text",
+          "version": "2.2.4",
+          "originX": "center",
+          "originY": "center",
+          "left": 0,
+          "top": -125,
+          "width": 56.4,
+          "height": 113,
+          "fill": "black",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeLineJoin": "round",
+          "strokeMiterLimit": 10,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "clipTo": null,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "transformMatrix": null,
+          "skewX": 0,
+          "skewY": 0,
+          "text": "+",
+          "fontSize": "100",
+          "fontWeight": "normal",
+          "fontFamily": "serif",
+          "fontStyle": "normal",
+          "lineHeight": 1.16,
+          "underline": false,
+          "overline": false,
+          "linethrough": false,
+          "textAlign": "center",
+          "textBackgroundColor": "",
+          "charSpacing": 0,
+          "id": "348",
+          "styles": {}
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "prep",
+          "message": "before:prepare",
+          "code": "const sound = document.createElement('audio')\nsound.src = 'static/10ms1000Hz (1).mp3'\nsound.volume = this.aggregateParameters.a1\nthis.internals.sound = sound"
+        },
+        {
+          "title": "play",
+          "message": "run",
+          "code": "this.internals.sound.play()"
+        }
+      ],
+      "viewport": [
+        800,
+        600
+      ],
+      "title": "SIFI stimulus 1",
+      "_tab": "Scripts",
+      "timeout": "16",
+      "files": []
+    },
+    "17": {
+      "id": "17",
+      "type": "lab.canvas.Screen",
+      "content": [
+        {
+          "type": "i-text",
+          "version": "2.2.4",
+          "originX": "center",
+          "originY": "center",
+          "left": 0,
+          "top": -125,
+          "width": 56.4,
+          "height": 113,
+          "fill": "black",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeLineJoin": "round",
+          "strokeMiterLimit": 10,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "clipTo": null,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "transformMatrix": null,
+          "skewX": 0,
+          "skewY": 0,
+          "text": "+",
+          "fontSize": "100",
+          "fontWeight": "normal",
+          "fontFamily": "serif",
+          "fontStyle": "normal",
+          "lineHeight": 1.16,
+          "underline": false,
+          "overline": false,
+          "linethrough": false,
+          "textAlign": "center",
+          "textBackgroundColor": "",
+          "charSpacing": 0,
+          "id": "358",
+          "styles": {}
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "viewport": [
+        800,
+        600
+      ],
+      "title": "SIFI SOA",
+      "_tab": "Content",
+      "timeout": "${parameters.SOA}",
+      "files": []
+    },
+    "18": {
+      "id": "18",
+      "type": "lab.canvas.Screen",
+      "content": [
+        {
+          "type": "i-text",
+          "version": "2.2.4",
+          "originX": "center",
+          "originY": "center",
+          "left": "0",
+          "top": "-125",
+          "width": 56.4,
+          "height": 113,
+          "fill": "black",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeLineJoin": "round",
+          "strokeMiterLimit": 10,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "clipTo": null,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "transformMatrix": null,
+          "skewX": 0,
+          "skewY": 0,
+          "text": "+",
+          "fontSize": "100",
+          "fontWeight": "normal",
+          "fontFamily": "serif",
+          "fontStyle": "normal",
+          "lineHeight": 1.16,
+          "underline": false,
+          "overline": false,
+          "linethrough": false,
+          "textAlign": "center",
+          "textBackgroundColor": "",
+          "charSpacing": 0,
+          "id": "368",
+          "styles": {}
+        },
+        {
+          "type": "circle",
+          "version": "2.2.4",
+          "originX": "center",
+          "originY": "center",
+          "left": 0,
+          "top": "90.5",
+          "width": "55",
+          "height": 55,
+          "fill": "${parameters.v2}",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeLineJoin": "round",
+          "strokeMiterLimit": 10,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "clipTo": null,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "transformMatrix": null,
+          "skewX": 0,
+          "skewY": 0,
+          "radius": 27.5,
+          "startAngle": 0,
+          "endAngle": 6.283185307179586,
+          "id": "369"
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "prep",
+          "message": "before:prepare",
+          "code": "const sound = document.createElement('audio')\nsound.src = 'static/10ms1000Hz (1).mp3'\nsound.volume = this.aggregateParameters.a1\nthis.internals.sound = sound"
+        },
+        {
+          "title": "play",
+          "message": "run",
+          "code": "this.internals.sound.play()"
+        }
+      ],
+      "viewport": [
+        800,
+        600
+      ],
+      "title": "SIFI stimulus 2",
+      "_tab": "Behavior",
+      "timeout": "16",
+      "files": []
+    },
+    "19": {
+      "id": "19",
+      "type": "lab.canvas.Screen",
+      "content": [
+        {
+          "type": "i-text",
+          "version": "2.2.4",
+          "originX": "center",
+          "originY": "center",
+          "left": 0,
+          "top": -125,
+          "width": 44.38,
+          "height": 113,
+          "fill": "black",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeLineJoin": "round",
+          "strokeMiterLimit": 10,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "clipTo": null,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "transformMatrix": null,
+          "skewX": 0,
+          "skewY": 0,
+          "text": "?",
+          "fontSize": "100",
+          "fontWeight": "normal",
+          "fontFamily": "serif",
+          "fontStyle": "normal",
+          "lineHeight": 1.16,
+          "underline": false,
+          "overline": false,
+          "linethrough": false,
+          "textAlign": "center",
+          "textBackgroundColor": "",
+          "charSpacing": 0,
+          "id": "510",
+          "styles": {}
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "responses": [
+        {
+          "label": "0",
+          "event": "keypress",
+          "target": "",
+          "filter": "b"
+        },
+        {
+          "label": "1",
+          "event": "keypress",
+          "target": "",
+          "filter": "n"
+        },
+        {
+          "label": "2",
+          "event": "keypress",
+          "target": "",
+          "filter": "m"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "viewport": [
+        800,
+        600
+      ],
+      "title": "SIFI response",
+      "_tab": "Content",
+      "timeout": "1700",
+      "files": []
+    },
+    "20": {
+      "id": "20",
+      "type": "lab.canvas.Screen",
+      "content": [
+        {
+          "type": "i-text",
+          "version": "2.2.4",
+          "originX": "center",
+          "originY": "center",
+          "left": 0,
+          "top": -125,
+          "width": 56.4,
+          "height": 113,
+          "fill": "black",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeLineJoin": "round",
+          "strokeMiterLimit": 10,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "clipTo": null,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "transformMatrix": null,
+          "skewX": 0,
+          "skewY": 0,
+          "text": "+",
+          "fontSize": "100",
+          "fontWeight": "normal",
+          "fontFamily": "serif",
+          "fontStyle": "normal",
+          "lineHeight": 1.16,
+          "underline": false,
+          "overline": false,
+          "linethrough": false,
+          "textAlign": "center",
+          "textBackgroundColor": "",
+          "charSpacing": 0,
+          "id": "778",
+          "styles": {}
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "viewport": [
+        800,
+        600
+      ],
+      "title": "ITI",
+      "_tab": "Behavior",
+      "timeout": "${parameters.ITI}",
+      "files": []
+    },
+    "110": {
+      "id": "110",
+      "type": "lab.flow.Sequence",
+      "children": [
+        "112"
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "block 2",
+      "_collapsed": false,
+      "files": []
+    },
+    "112": {
+      "id": "112",
+      "type": "lab.canvas.Frame",
+      "context": "",
+      "contextSelector": "canvas",
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "Frame",
+      "children": [
+        "113"
+      ],
+      "files": []
+    },
+    "113": {
+      "id": "113",
+      "type": "lab.flow.Loop",
+      "children": [
+        "114"
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "templateParameters": {
+        "columns": [
+          {
+            "name": "SIFIlabel",
+            "type": "string"
+          },
+          {
+            "name": "SOA",
+            "type": "number"
+          },
+          {
+            "name": "v1",
+            "type": "string"
+          },
+          {
+            "name": "v2",
+            "type": "string"
+          },
+          {
+            "name": "a1",
+            "type": "number"
+          },
+          {
+            "name": "a2",
+            "type": "number"
+          },
+          {
+            "name": "fixation",
+            "type": "number"
+          },
+          {
+            "name": "ITI",
+            "type": "string"
+          }
+        ],
+        "rows": [
+          [
+            "A0",
+            "53",
+            "white",
+            "grey",
+            "0",
+            "0",
+            "1000",
+            "1000"
+          ],
+          [
+            "A1",
+            "53",
+            "white",
+            "grey",
+            "1",
+            "0",
+            "1200",
+            "1100"
+          ],
+          [
+            "A1",
+            "53",
+            "white",
+            "grey",
+            "1",
+            "0",
+            "1000",
+            "1200"
+          ],
+          [
+            "A2",
+            "180",
+            "white",
+            "grey",
+            "1",
+            "1",
+            "1200",
+            "1000"
+          ],
+          [
+            "A0",
+            "53",
+            "white",
+            "grey",
+            "0",
+            "0",
+            "1200",
+            "1000"
+          ],
+          [
+            "A0",
+            "53",
+            "white",
+            "grey",
+            "0",
+            "0",
+            "1100",
+            "1300"
+          ],
+          [
+            "A2",
+            "180",
+            "white",
+            "grey",
+            "1",
+            "1",
+            "1000",
+            "1200"
+          ],
+          [
+            "A1",
+            "53",
+            "white",
+            "grey",
+            "1",
+            "0",
+            "1300",
+            "1000"
+          ],
+          [
+            "A2",
+            "180",
+            "white",
+            "grey",
+            "1",
+            "1",
+            "1300",
+            "1400"
+          ],
+          [
+            "A1",
+            "53",
+            "white",
+            "grey",
+            "1",
+            "0",
+            "1000",
+            "1300"
+          ],
+          [
+            "A1",
+            "53",
+            "white",
+            "grey",
+            "1",
+            "0",
+            "1200",
+            "1000"
+          ],
+          [
+            "A2",
+            "180",
+            "white",
+            "grey",
+            "1",
+            "1",
+            "1300",
+            "1400"
+          ],
+          [
+            "A1",
+            "53",
+            "white",
+            "grey",
+            "1",
+            "0",
+            "1300",
+            "1300"
+          ],
+          [
+            "A0",
+            "53",
+            "white",
+            "grey",
+            "0",
+            "0",
+            "1200",
+            "1000"
+          ],
+          [
+            "A0",
+            "53",
+            "white",
+            "grey",
+            "0",
+            "0",
+            "1400",
+            "1400"
+          ]
+        ]
+      },
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "loop conditions",
+      "_tab": "Parameters",
+      "_collapsed": false,
+      "files": [],
+      "sample": {
+        "mode": "sequential"
+      }
+    },
+    "114": {
+      "id": "114",
+      "type": "lab.flow.Sequence",
+      "children": [
+        "123",
+        "118",
+        "119",
+        "120",
+        "121",
+        "122"
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "Sequence",
+      "files": []
+    },
+    "118": {
+      "id": "118",
+      "type": "lab.canvas.Screen",
+      "content": [
+        {
+          "type": "circle",
+          "version": "2.2.4",
+          "originX": "center",
+          "originY": "center",
+          "left": 0,
+          "top": "90.5",
+          "width": 55,
+          "height": 55,
+          "fill": "${ parameters.v1 }",
+          "stroke": "${parameters.v1}",
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeLineJoin": "round",
+          "strokeMiterLimit": 10,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "clipTo": null,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "transformMatrix": null,
+          "skewX": 0,
+          "skewY": 0,
+          "radius": 27.5,
+          "startAngle": 0,
+          "endAngle": 6.283185307179586,
+          "id": "182"
+        },
+        {
+          "type": "i-text",
+          "version": "2.2.4",
+          "originX": "center",
+          "originY": "center",
+          "left": 0,
+          "top": -125,
+          "width": 56.4,
+          "height": 113,
+          "fill": "black",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeLineJoin": "round",
+          "strokeMiterLimit": 10,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "clipTo": null,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "transformMatrix": null,
+          "skewX": 0,
+          "skewY": 0,
+          "text": "+",
+          "fontSize": "100",
+          "fontWeight": "normal",
+          "fontFamily": "serif",
+          "fontStyle": "normal",
+          "lineHeight": 1.16,
+          "underline": false,
+          "overline": false,
+          "linethrough": false,
+          "textAlign": "center",
+          "textBackgroundColor": "",
+          "charSpacing": 0,
+          "id": "348",
+          "styles": {}
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "prep",
+          "message": "before:prepare",
+          "code": "const sound = document.createElement('audio')\nsound.src = 'static/10ms1000Hz (1).mp3'\nsound.volume = this.aggregateParameters.a1\nthis.internals.sound = sound"
+        },
+        {
+          "title": "play",
+          "message": "run",
+          "code": "this.internals.sound.play()"
+        }
+      ],
+      "viewport": [
+        800,
+        600
+      ],
+      "title": "SIFI stimulus 1",
+      "_tab": "Scripts",
+      "timeout": "16",
+      "files": []
+    },
+    "119": {
+      "id": "119",
+      "type": "lab.canvas.Screen",
+      "content": [
+        {
+          "type": "i-text",
+          "version": "2.2.4",
+          "originX": "center",
+          "originY": "center",
+          "left": 0,
+          "top": -125,
+          "width": 56.4,
+          "height": 113,
+          "fill": "black",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeLineJoin": "round",
+          "strokeMiterLimit": 10,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "clipTo": null,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "transformMatrix": null,
+          "skewX": 0,
+          "skewY": 0,
+          "text": "+",
+          "fontSize": "100",
+          "fontWeight": "normal",
+          "fontFamily": "serif",
+          "fontStyle": "normal",
+          "lineHeight": 1.16,
+          "underline": false,
+          "overline": false,
+          "linethrough": false,
+          "textAlign": "center",
+          "textBackgroundColor": "",
+          "charSpacing": 0,
+          "id": "358",
+          "styles": {}
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "viewport": [
+        800,
+        600
+      ],
+      "title": "SIFI SOA",
+      "_tab": "Content",
+      "timeout": "${parameters.SOA}",
+      "files": []
+    },
+    "120": {
+      "id": "120",
+      "type": "lab.canvas.Screen",
+      "content": [
+        {
+          "type": "i-text",
+          "version": "2.2.4",
+          "originX": "center",
+          "originY": "center",
+          "left": "0",
+          "top": "-125",
+          "width": 56.4,
+          "height": 113,
+          "fill": "black",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeLineJoin": "round",
+          "strokeMiterLimit": 10,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "clipTo": null,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "transformMatrix": null,
+          "skewX": 0,
+          "skewY": 0,
+          "text": "+",
+          "fontSize": "100",
+          "fontWeight": "normal",
+          "fontFamily": "serif",
+          "fontStyle": "normal",
+          "lineHeight": 1.16,
+          "underline": false,
+          "overline": false,
+          "linethrough": false,
+          "textAlign": "center",
+          "textBackgroundColor": "",
+          "charSpacing": 0,
+          "id": "368",
+          "styles": {}
+        },
+        {
+          "type": "circle",
+          "version": "2.2.4",
+          "originX": "center",
+          "originY": "center",
+          "left": 0,
+          "top": "90.5",
+          "width": "55",
+          "height": 55,
+          "fill": "${parameters.v2}",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeLineJoin": "round",
+          "strokeMiterLimit": 10,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "clipTo": null,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "transformMatrix": null,
+          "skewX": 0,
+          "skewY": 0,
+          "radius": 27.5,
+          "startAngle": 0,
+          "endAngle": 6.283185307179586,
+          "id": "369"
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "prep",
+          "message": "before:prepare",
+          "code": "const sound = document.createElement('audio')\nsound.src = 'static/10ms1000Hz (1).mp3'\nsound.volume = this.aggregateParameters.a1\nthis.internals.sound = sound"
+        },
+        {
+          "title": "play",
+          "message": "run",
+          "code": "this.internals.sound.play()"
+        }
+      ],
+      "viewport": [
+        800,
+        600
+      ],
+      "title": "SIFI stimulus 2",
+      "_tab": "Scripts",
+      "timeout": "16",
+      "files": []
+    },
+    "121": {
+      "id": "121",
+      "type": "lab.canvas.Screen",
+      "content": [
+        {
+          "type": "i-text",
+          "version": "2.2.4",
+          "originX": "center",
+          "originY": "center",
+          "left": 0,
+          "top": -125,
+          "width": 44.38,
+          "height": 113,
+          "fill": "black",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeLineJoin": "round",
+          "strokeMiterLimit": 10,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "clipTo": null,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "transformMatrix": null,
+          "skewX": 0,
+          "skewY": 0,
+          "text": "?",
+          "fontSize": "100",
+          "fontWeight": "normal",
+          "fontFamily": "serif",
+          "fontStyle": "normal",
+          "lineHeight": 1.16,
+          "underline": false,
+          "overline": false,
+          "linethrough": false,
+          "textAlign": "center",
+          "textBackgroundColor": "",
+          "charSpacing": 0,
+          "id": "510",
+          "styles": {}
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "responses": [
+        {
+          "label": "0",
+          "event": "keypress",
+          "target": "",
+          "filter": "b"
+        },
+        {
+          "label": "1",
+          "event": "keypress",
+          "target": "",
+          "filter": "n"
+        },
+        {
+          "label": "2",
+          "event": "keypress",
+          "target": "",
+          "filter": "m"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "viewport": [
+        800,
+        600
+      ],
+      "title": "SIFI response",
+      "_tab": "Content",
+      "timeout": "1700",
+      "files": []
+    },
+    "122": {
+      "id": "122",
+      "type": "lab.canvas.Screen",
+      "content": [
+        {
+          "type": "i-text",
+          "version": "2.2.4",
+          "originX": "center",
+          "originY": "center",
+          "left": 0,
+          "top": -125,
+          "width": 56.4,
+          "height": 113,
+          "fill": "black",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeLineJoin": "round",
+          "strokeMiterLimit": 10,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "clipTo": null,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "transformMatrix": null,
+          "skewX": 0,
+          "skewY": 0,
+          "text": "+",
+          "fontSize": "100",
+          "fontWeight": "normal",
+          "fontFamily": "serif",
+          "fontStyle": "normal",
+          "lineHeight": 1.16,
+          "underline": false,
+          "overline": false,
+          "linethrough": false,
+          "textAlign": "center",
+          "textBackgroundColor": "",
+          "charSpacing": 0,
+          "id": "800",
+          "styles": {}
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "viewport": [
+        800,
+        600
+      ],
+      "title": "ITI",
+      "_tab": "Behavior",
+      "timeout": "${parameters.ITI}",
+      "files": []
+    },
+    "123": {
+      "id": "123",
+      "type": "lab.canvas.Screen",
+      "content": [
+        {
+          "type": "i-text",
+          "version": "2.2.4",
+          "originX": "center",
+          "originY": "center",
+          "left": "0",
+          "top": -125,
+          "width": 56.4,
+          "height": 113,
+          "fill": "black",
+          "stroke": null,
+          "strokeWidth": 1,
+          "strokeDashArray": null,
+          "strokeLineCap": "butt",
+          "strokeLineJoin": "round",
+          "strokeMiterLimit": 10,
+          "scaleX": 1,
+          "scaleY": 1,
+          "angle": 0,
+          "flipX": false,
+          "flipY": false,
+          "opacity": 1,
+          "shadow": null,
+          "visible": true,
+          "clipTo": null,
+          "backgroundColor": "",
+          "fillRule": "nonzero",
+          "paintFirst": "fill",
+          "globalCompositeOperation": "source-over",
+          "transformMatrix": null,
+          "skewX": 0,
+          "skewY": 0,
+          "text": "+",
+          "fontSize": "100",
+          "fontWeight": "normal",
+          "fontFamily": "serif",
+          "fontStyle": "normal",
+          "lineHeight": 1.16,
+          "underline": false,
+          "overline": false,
+          "linethrough": false,
+          "textAlign": "center",
+          "textBackgroundColor": "",
+          "charSpacing": 0,
+          "id": "320",
+          "styles": {}
+        }
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "responses": [
+        {
+          "label": "",
+          "event": "",
+          "target": "",
+          "filter": ""
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "viewport": [
+        800,
+        600
+      ],
+      "title": "Fixation",
+      "_tab": "Content",
+      "timeout": "${parameters.fixation}",
+      "files": []
+    },
+    "129": {
+      "id": "129",
+      "type": "lab.html.Screen",
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "responses": [
+        {
+          "label": "Continue",
+          "event": "keypress",
+          "target": "",
+          "filter": "Space"
+        }
+      ],
+      "messageHandlers": [
+        {
+          "title": "",
+          "message": "",
+          "code": ""
+        }
+      ],
+      "title": "instructions",
+      "_tab": "Content",
+      "content": "<header><h3> Welcome to the experiment! </h3> </header>\n\n<main class=\"content-vertical-center content-horizontal-center\">\n  <div class=\"w-m text-justify\">\n\n<p>The following experiment consists of 2 blocks in which you'll be presented different combinations beeps and flashes. </p>\n\n<p>Please state aloud after each stimulus if you saw one, two, or zero flash(es).<p>\n  \n<p>Try to keep your gaze fixed on the cross you'll see in the upper middle of the screen.<p>\n\n<p>You can take a break between the blocks, but please be aware that you can't take a break during a block. <p>\n\n\n<footer style=\"background-color:grey;\">\n   <p>Press the SPACEBAR when you are ready to begin.</p> \n </footer>",
+      "files": []
+    },
+    "root": {
+      "id": "root",
+      "title": "root",
+      "type": "lab.flow.Sequence",
+      "children": [
+        "129",
+        "10",
+        "7",
+        "110",
+        "9"
+      ],
+      "parameters": [
+        {
+          "name": "",
+          "value": "",
+          "type": "string"
+        }
+      ],
+      "plugins": [
+        {
+          "type": "lab.plugins.Metadata"
+        }
+      ],
+      "metadata": {
+        "title": "Sound Induced Flash Illusion Program",
+        "description": "",
+        "repository": "",
+        "contributors": "Evelina Babu\n"
+      },
+      "files": [],
+      "messageHandlers": []
+    }
+  },
+  "version": [
+    20,
+    2,
+    4
+  ],
+  "files": {
+    "files": {
+      "index.html": {
+        "content": "data:text/html,%3C!doctype%20html%3E%0A%3Chtml%3E%0A%3Chead%3E%0A%20%20%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%3Ctitle%3EExperiment%3C%2Ftitle%3E%0A%20%20%3C!--%20lab.js%20library%20and%20experiment%20code%20--%3E%0A%20%20%24%7B%20header%20%7D%0A%3C%2Fhead%3E%0A%20%3Cbody%20style%3D%22background-color%3Agrey%3B%22%3E%0A%20%20%3C!--%20If%20you'd%20rather%20have%20a%20container%20with%20a%20fixed%20width%0A%20%20%20%20%20%20%20and%20variable%20height%2C%20try%20removing%20the%20fullscreen%20class%20below%20--%3E%0A%20%20%3Cdiv%20class%3D%22container%20fullscreen%22%20data-labjs-section%3D%22main%22%3E%0A%20%20%20%20%3Cmain%20class%3D%22content-vertical-center%20content-horizontal-center%22%3E%0A%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%3Ch2%3ELoading%20Experiment%3C%2Fh2%3E%0A%20%20%20%20%20%20%20%20%3Cp%3EThe%20experiment%20is%20loading%20and%20should%20start%20in%20a%20few%20seconds%3C%2Fp%3E%0A%20%20%20%20%20%20%3C%2Fdiv%3E%0A%20%20%20%20%3C%2Fmain%3E%0A%20%20%3C%2Fdiv%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E%0A",
+        "source": "library"
+      },
+      "style.css": {
+        "content": "data:text/css,%2F*%20Please%20define%20your%20custom%20styles%20here%20*%2F",
+        "source": "library"
+      },
+      "static/10ms1000Hz (1).mp3": {
+        "content": "data:audio/mp3;base64,SUQzAwAAAAAAFlRQRTEAAAAMAAAASnVsaWFuIEtlaWz/+5DEAAAAAAAAAAAAAAAAAAAAAABJbmZvAAAADwAAAAIAAATkAICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgID//////////////////////////////////////////////////////////////////wAAADlMQU1FMy45OXIBzQAAAAAAAAAAFIAkBQdCAACAAAAE5JzbHI0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/+5DEAAAPxGM4dbyAE4cf5d89sAAAAluXOVu2sOhLLll3zBR0zlFNwZjUi4QEZqLicTKnLx5wLWaaUhUEPH0/9zrfNMkDDoprHa/D8spIxDD+P4/kOSynt5555516ekpKSwCAIAmD4Pg+fwQBAEwffLggCAY+XDGCAJg+D+oEAQDH3cuD4Pn+UOfBAEPB8/B9/xAAACCQmlEEAAAFwDTBmCZEQDxgsBAA0C4wXQRDB2BPMTgZswaACDGyYWMOYoszA13D4qp8MpEjIwo8DzHzBLNqFeY0JyjDR0wzE2MvWzTz816TMEOgcZmFjxi4AAj8w4KMMBg5PMHCBAJkAGqZYFaqkFLLOjKBdTFbBaJwWuwQ+tIWvaffcidZEmFL4JTFhrUaryq/L34lEsfvq/HdZU4atzzSnspltWzNfjK5/CksQYwFpr7XJ5pNLh2tTdy3S6/88///ptzVW5ayq0vqJSM4X+Ip23//Fn2L/+j/02gH91PUAAJzBAzMhDkwQIjNqmNmtQ16eCRMnHL+em0JuM0GYmycEgJtxSmXAWYfIxn/+5LEFgPVvKMAXc0AAAAANIAAAARUoGPREEAcxaA17o3bIIbGGSm4gm+bmmKhwV4QYBMQLMUFLow4pkhKRWa7SOEzprz9W4ZdmNWvxpaWlpcd0sppbOpVDUPWa0ajVN2lhmHbVWlpbP5U1MEgaDuDR4qCpUFXA0eER4qCsShosDMRB31u1A0oGjxU7/8FQVgqdLHiwdgrTEFNRTMuOTkuNVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV",
+        "source": "embedded-global",
+        "checkSum": "2b026a99d6553ec843090820ac92886103070076b993d86fe32e3a6fcc497035"
+      }
+    },
+    "bundledFiles": {
+      "lib/lab.js": {
+        "type": "application/javascript"
+      },
+      "lib/lab.js.map": {
+        "type": "text/plain"
+      },
+      "lib/lab.fallback.js": {
+        "type": "application/javascript"
+      },
+      "lib/lab.legacy.js": {
+        "type": "application/javascript"
+      },
+      "lib/lab.legacy.js.map": {
+        "type": "text/plain"
+      },
+      "lib/lab.css": {
+        "type": "text/css"
+      },
+      "lib/loading.svg": {
+        "type": "image/svg+xml"
+      }
+    }
+  }
+}
