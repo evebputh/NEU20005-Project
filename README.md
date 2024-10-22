@@ -1,7 +1,5 @@
-Sound Induced Flash Program code json file
+Sound Induced Flash Program
 
-Created by Evelina Babu
+Code by Evelina Babu
 
-Contact creator to use
-
-The file can be opened in lab.js
+The json file can be opened in lab.js
